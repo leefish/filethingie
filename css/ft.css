@@ -1,0 +1,369 @@
+.safarihide {
+	position:absolute;
+	left:-10000px;
+}
+body {
+	font-family:Verdana, sans-serif;
+	font-size:12px;
+	color:#000;
+	background:#fff;
+}
+body, h1, h2, .navigation, #sidebar form #sidebar #files_list, #filelist .filedetails form, #filelist .filedetails ul, #logout {
+	margin:0;
+	padding:0;
+}
+#filelist .details span.hide {
+	background:#ffc;
+	color:#000;  
+}
+#filelist tr.rowhover, a:hover, h1, #sidebar h2, #filelist th, #filelist tfoot td, #filelist .hover, #filelist tr.rowhover .details span.hide {
+	background:#326532 !important;
+	color:#fff !important;
+}
+.error {color:red;}
+.ok {color:#326532;}
+.hidden {display:none;}
+a {
+	color:#326532;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+#logout {
+	position:absolute;
+	top:4px;
+	right:4px;
+	left:auto;
+	bottom:auto;
+	color:#fff;	
+	text-align:right;
+}
+#logout p {
+  margin:0;
+}
+h1 a, #logout a {
+	color:#fff;
+}
+h1 {
+	font-size:2em;
+	font-weight:bold;
+	padding:0.2em;
+	margin-bottom:25px;
+}
+h2 {
+	font-size:1.5em;
+	font-weight:normal;
+	margin-left:265px;
+}
+#main h2,
+#main p {
+  margin-left:25px;
+}
+form .description {
+  font-size:0.8em;
+  margin:0;
+}
+/* Normal tables */
+table {
+  border:1px solid black;
+  border-collapse:collapse;
+  margin:0 25px 15px 25px;
+  text-align:left;
+  width:300px;
+}
+th {
+  font-weight:bold;
+  background:#326532;
+  color:#fff;
+}
+th, td {
+  border:1px solid black;
+  padding:5px 10px;
+}
+
+/* Sidebar */
+#sidebar {
+	width:225px;
+	margin:0 40px 0 25px;
+	float:left;
+	font-size:10px;
+}
+#sidebar .section {
+	background:#DAE3DA;
+	margin:0 0 2.5em 0;
+	padding-bottom:0.8em;
+	border:1px solid black;
+}
+#sidebar .section form {
+	padding:0.8em 0.8em 0 0.8em;
+}
+#sidebar h2 {
+	font-size:1.2em;
+	font-weight:bold;
+	padding:0.4em 0 0.4em 0.4em;
+	margin:0;
+	border-bottom:1px solid black;
+}
+#sidebar h3 {
+	font-weight:bold;
+	font-size:1.2em;
+	margin:1em 0 0.5em 0;
+}
+#sidebar ul {
+	margin:0.8em 0 0 1.5em;
+	padding:0;	
+}
+#sidebar #files_list, #sidebar #searchlist {
+	margin-left:1.5em;
+}
+#sidebar #uploadbutton {
+	margin:1em 0 0 0;
+}
+#sidebar .info {
+  float:right;
+}
+#files_list span.error {
+	cursor:pointer;
+}
+#files_list span.error:hover {
+	text-decoration:underline;
+}
+#uploadsection input {
+	width:200px;
+}
+#mkdir, #q {
+	width:140px;
+}
+#mkdirsubmit, #searchsubmit {
+	width:40px;
+}
+#q {
+	width:130px;
+}
+#searchsubmit {
+	width:50px;
+}
+#sidebar p {
+	text-align:center;
+}
+.label_highlight {
+  font-weight:bold;
+}
+/* Search */
+div#searchoptions {
+	margin:0.5em 0 0 0.3em;
+}
+dl#searchlist dt {
+	font-size:1.2em;;
+}
+dl#searchlist dt.dir {
+	font-weight:bold;
+}
+dl#searchlist dd {
+	margin:0.3em 0 0.5em 1em;
+	padding-left:0;
+}
+dl#searchlist dd a {
+	color:#666;
+}
+dl#searchlist dd a:hover {
+	color:#fff;
+}
+/* Status box and auto update box */
+#status p, #autoupdate p {
+  text-align:left;
+}
+#status p, 
+#status ul, 
+#autoupdate div {
+	text-align:left;
+	margin:0px;
+  padding:0;
+}
+#status ul {
+	padding:0 0 0 10px;  
+}
+#status, #autoupdate {
+	background-color:#ffc;
+	border:1px solid black;
+	padding:10px;
+	margin:0 0 15px 285px;
+	width:400px;
+}
+/* File list */
+#filelist td.name a {
+	color:#000;
+  display:block;
+/*  width:100%;*/
+/*  height:100%;*/
+  padding:4px 2em 4px 10px;
+}
+#filelist td.name {
+  padding:0;
+  margin:0;
+}
+#filelist a:hover {
+	background:inherit;
+	text-decoration:none;
+}
+#filelist tr.rowhover a {
+	color:#fff;
+}
+#filelist {
+	border:1px solid black;
+	border-collapse:collapse;
+	margin:0 25px;
+}
+#filelist tfoot td, #filelist th {
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+}
+#filelist th, #filelist tfoot td {
+	font-weight:bold;
+}
+#filelist th.size a {
+	color:white;
+}
+#filelist th {
+	padding:0.3em 0.6em;
+	text-align:left;
+}
+#filelist td.details {
+  padding:0.3em 0;
+}
+#filelist .details span.show, #filelist .details span.hide {
+	cursor:pointer;
+  padding:4px 4px;
+}
+#filelist th.size, 
+#filelist td.size, 
+#filelist th.date, 
+#filelist td.date {
+	text-align:right;
+}
+#filelist th.size, 
+#filelist td.size {
+  padding-right:10px;
+}
+#filelist tfoot td {
+	font-size:10px;
+	text-align:right;
+	font-weight:normal;
+}
+#filelist tr {
+	background:#fff;
+}
+#filelist tr.odd {
+	background:#DAE3DA;
+}
+#filelist tr.dir td.name {
+	font-weight:bold;
+}
+#filelist tr.highlight {
+	background:#ffc;
+	font-style:italic;
+	font-weight:bold;
+}
+#filelist tr.rowhover {
+	background:#326532;
+	color:#fff;
+}
+#filelist .hover, #filelist .filedetails ul li {
+	cursor:pointer;
+}
+#filelist .filedetails {
+	background:#ffc;
+	font-size:10px;
+	border-top:2px solid black;
+	border-bottom:2px solid black;
+	padding:1em 0.5em;
+}
+#filelist .filedetails td {
+	width:275px;
+}
+#filelist .filedetails .newvalue {
+	width:150px;
+}
+#filelist .filedetails form {
+	padding:0.3em;
+}
+#filelist .filedetails label {
+	display:block;
+	font-weight:bold;
+	margin:0 0 0.5em 0;
+}
+#filelist .filedetails ul {
+	list-style:none;
+	padding:0.3em 1.2em 0.3em 0.3em;
+	width:60px;
+	float:left;
+}
+#filelist .filedetails ul li.selected {
+	font-weight:bold;
+}
+#filelist td.error {
+	padding:1em 3em;
+}
+form#sort_form {
+  margin:0;
+  padding:0;
+  float:right;
+}
+#sort {
+  margin:0;
+  padding:0;
+}
+/* Edit form */
+form#edit, #main {
+/*  margin-left:265px;*/
+float:left;
+}
+form#edit textarea {
+	margin:1.5em 0 1em 0;
+}
+#savestatus {
+	margin-left:265px;
+}
+/* Login box */
+#loginbox {
+	margin:25px;
+	width:350px;
+}
+#loginbox div {
+  clear:both;
+}
+#loginbox label {
+  display:block;
+  height:2.4em;
+  width:100%;
+}
+#cookie_label {
+  text-align:left;
+  margin-left:116px;
+}
+#ft_user, #ft_pass {
+  float:right;
+  width:225px;
+}
+#login_button {
+  float:right;
+}
+/* Footer */
+#footer {
+	font-size:10px;
+	clear:both;
+	margin:25px;
+	padding-bottom:50px;
+}
+.seperator {
+	border-top:2px solid #326532;
+}
+#versioninfo {
+	display:none;
+	margin:1em 2em;
+	padding:0.5em;
+	border:2px solid #326532;
+	background:#ffc;
+	width:250px;
+}
